@@ -12,7 +12,7 @@ function HeroText(){
 }
 function OrderProgress({subtotal,mode}){
  const reduce=useReducedMotion();const remaining=Math.max(0,499-subtotal);
- return <div className="order-progress"><p>{mode==='pickup'?'Pickup selected. No demo delivery fee.':remaining?<>Just <strong>₹{remaining}</strong> away from free demo delivery.</>:<>A little extra joy: <strong>free demo delivery unlocked.</strong></>}</p><div className="progress-track" role="progressbar" aria-label="Progress toward free demo delivery" aria-valuemin={0} aria-valuemax={499} aria-valuenow={Math.min(499,subtotal)}><motion.div className="progress-fill" initial={false} animate={{width:mode==='pickup'?'100%':`${Math.min(100,subtotal/499*100)}%`}} transition={{duration:reduce?0:.45}}/></div></div>
+ return <div className="order-progress"><p>{mode==='pickup'?'Pickup selected. No delivery fee.':remaining?<>Just <strong>₹{remaining}</strong> away from free delivery.</>:<>A little extra joy: <strong>free delivery unlocked.</strong></>}</p><div className="progress-track" role="progressbar" aria-label="Progress toward free delivery" aria-valuemin={0} aria-valuemax={499} aria-valuenow={Math.min(499,subtotal)}><motion.div className="progress-fill" initial={false} animate={{width:mode==='pickup'?'100%':`${Math.min(100,subtotal/499*100)}%`}} transition={{duration:reduce?0:.45}}/></div></div>
 }
 const roots=new Map();
 function mount(el,component){if(roots.has(el))return;const root=createRoot(el);roots.set(el,root);root.render(component)}
