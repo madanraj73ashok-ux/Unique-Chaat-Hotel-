@@ -1,0 +1,3 @@
+const test=require('node:test'),assert=require('node:assert/strict');
+const {normalize,label,instruction}=require('../payment-options');
+test('only cash and GPay at handover are supported',()=>{assert.equal(normalize('gpay'),'gpay');for(const v of [null,undefined,'cash','card','upi-link','<script>'])assert.equal(normalize(v),'cash');assert.equal(label('cash'),'Cash on delivery');assert.equal(label('gpay'),'GPay on delivery');assert.equal(label('gpay','pickup'),'GPay at pickup');assert.match(instruction('gpay'),/when your order arrives/);assert.match(instruction('cash','pickup'),/when you collect/)});

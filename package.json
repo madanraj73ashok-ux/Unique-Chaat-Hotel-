@@ -1,0 +1,25 @@
+{
+  "name": "unique-chaat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Original restaurant frontend with Motion Primitives and Watermelon UI enhancements",
+  "scripts": {
+    "start": "node server.cjs",
+    "build": "node build.cjs",
+    "test": "node --test tests/core.test.cjs tests/catalog.test.cjs tests/payment.test.cjs",
+    "test:browser": "node tests/browser.test.cjs",
+    "test:admin": "node tests/admin.browser.cjs"
+  },
+  "dependencies": {
+    "motion": "14.9.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "playwright": "1.58.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

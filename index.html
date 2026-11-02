@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#52263e">
+  <meta name="description" content="Meet UNIQUE CHAAT: big flavours, crunchy classics and a little extra chatpata. Explore our menu preview and try the demo ordering experience.">
+  <meta property="og:title" content="UNIQUE CHAAT — A little extra chatpata">
+  <meta property="og:description" content="An original Indian street-food restaurant concept. Explore the demo menu.">
+  <title>UNIQUE CHAAT — A little extra chatpata</title>
+  <link rel="icon" href="assets/unique-chaat-lettering.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="motion.css">
+  <link rel="stylesheet" href="photos.css">
+  <link rel="stylesheet" href="dark.css">
+  <script src="menu-data.js" defer></script>
+  <script src="catalog-store.js" defer></script>
+  <script src="core.js" defer></script>
+  <script src="photo-data.js" defer></script>
+  <script src="payment-options.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="ui-bundle.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="demo-banner">A little preview. A lot of flavour. <span>Menu preview · Prices from your menu photo · No real orders</span></div>
+  <header class="site-header">
+    <a href="#/" class="brand" draggable="false" aria-label="UNIQUE CHAAT home"><img src="assets/unique-chaat-lettering.png" alt="Unique Chaat gold logo" draggable="false" width="180" height="82"></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#/menu">Menu</a><a href="#/offers">Offers <span class="tiny-star">✳</span></a><a href="#/about">Our story</a><a href="#/contact">Contact</a></nav>
+    <div class="header-actions"><button class="fulfillment" data-action="fulfillment" aria-label="Change delivery or pickup"><span class="pin-icon">⌖</span><span id="service-label">Delivery</span><span>⌄</span></button><button class="cart-button" data-action="cart" aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Z M8 8V6a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="1.7"/></svg><span class="cart-word">Cart</span><span id="cart-count">0</span></button><button class="mobile-toggle icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav" data-action="nav">☰</button></div>
+  </header>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#/">Home</a><a href="#/menu">Menu</a><a href="#/offers">Offers</a><a href="#/about">Our story</a><a href="#/contact">Contact</a></nav>
+  <main id="main" tabindex="-1"></main>
+  <footer><div class="footer-top"><div><a class="footer-brand" draggable="false" href="#/" aria-label="UNIQUE CHAAT home"><img src="assets/unique-chaat-lettering.png" alt="Unique Chaat gold logo" draggable="false" width="200" height="91" loading="lazy"></a><p>Street-food soul. A little extra chatpata.</p></div><a class="footer-cta" href="#/menu">Find your next favourite ↗</a></div><div class="footer-links"><span>© <span id="year"></span> UNIQUE CHAAT · Restaurant concept</span><div><a href="#/about">Our story</a><a href="#/contact">Get in touch</a><a href="photo-credits.html">Photo credits</a><button class="text-button" data-action="privacy">Privacy & demo info</button></div></div><p class="footer-note">Menu names and prices transcribed from the supplied photograph; current prices and availability need confirmation. Offers and customizations are demos; food photos are representative. Business details and allergen information are pending.</p></footer>
+  <dialog id="item-dialog" aria-labelledby="item-title"></dialog>
+  <dialog id="cart-dialog" class="drawer" aria-labelledby="cart-title"></dialog>
+  <dialog id="info-dialog" class="info-dialog" aria-labelledby="info-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
+

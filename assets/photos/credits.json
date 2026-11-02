@@ -1,0 +1,92 @@
+{
+  "pani": {
+    "file": "assets/photos/pani.jpg",
+    "source": "https://www.pexels.com/photo/deep-fried-bread-pani-puri-with-chickpea-filling-served-with-spread-17184404/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "chaat": {
+    "file": "assets/photos/chaat.jpg",
+    "source": "https://www.pexels.com/photo/delicious-indian-pani-puri-with-toppings-29478988/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "pizza": {
+    "file": "assets/photos/pizza.jpg",
+    "source": "https://www.pexels.com/photo/pizza-with-vegetables-and-spices-1527602/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "veggie-burger": {
+    "file": "assets/photos/veggie-burger.jpg",
+    "source": "https://www.pexels.com/photo/delicious-vege-burger-19709551/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "burger": {
+    "file": "assets/photos/burger.jpg",
+    "source": "https://www.pexels.com/photo/crispy-chicken-sandwich-with-french-fries-38895555/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "sandwich": {
+    "file": "assets/photos/sandwich.jpg",
+    "source": "https://www.pexels.com/photo/fries-and-sandwich-1372647/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "wrap": {
+    "file": "assets/photos/wrap.jpg",
+    "source": "https://www.pexels.com/photo/close-up-of-wrapped-sandwich-with-sauce-and-fries-36188327/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "pasta": {
+    "file": "assets/photos/pasta.jpg",
+    "source": "https://www.pexels.com/photo/pasta-dish-on-white-ceramic-plate-3820638/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "noodles": {
+    "file": "assets/photos/noodles.jpg",
+    "source": "https://www.pexels.com/photo/close-up-photo-of-noodles-4635600/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "fries": {
+    "file": "assets/photos/fries.jpg",
+    "source": "https://www.pexels.com/photo/close-up-photo-of-french-fries-4109234/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "chicken": {
+    "file": "assets/photos/chicken.jpg",
+    "source": "https://www.pexels.com/photo/fried-chicken-and-potato-wedges-on-brown-wooden-tray-7169617/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "shake": {
+    "file": "assets/photos/shake.jpg",
+    "source": "https://www.pexels.com/photo/a-glass-of-milk-shake-with-a-dash-of-chocolate-8161428/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "cooler": {
+    "file": "assets/photos/cooler.jpg",
+    "source": "https://www.pexels.com/photo/mojito-with-mint-and-lemon-on-white-background-4021979/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "momos": {
+    "file": "assets/photos/momos.jpg",
+    "source": "https://www.pexels.com/photo/crispy-cheese-corn-momos-with-dipping-sauces-28445592/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  },
+  "samosa": {
+    "file": "assets/photos/samosa.jpg",
+    "source": "https://www.pexels.com/photo/a-close-up-shot-of-a-plate-of-delicious-samosa-14883757/",
+    "license": "https://www.pexels.com/license/",
+    "usage": "Representative category photograph; not an actual UNIQUE CHAAT product photo."
+  }
+}

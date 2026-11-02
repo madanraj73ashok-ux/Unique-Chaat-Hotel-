@@ -1,0 +1,16 @@
+/* Real representative food photography, kept local for reliable loading. */
+.product-image{padding:0;height:230px;background:#e8dece}
+.product-image img{width:100%;height:100%;object-fit:cover}
+.product-image:hover img{transform:scale(1.06)}
+.image-caption{background:#fffaf0eb;color:#4c3543;padding:3px 8px;border-radius:20px;bottom:10px;right:10px;font-size:9px}
+.category-tile{padding:0 0 16px;overflow:hidden;border-radius:70px 70px 18px 18px}
+.category-tile img{width:100%;height:155px;max-height:none;object-fit:cover;margin-bottom:13px}
+.hero-art>img{width:83%;height:510px;object-fit:cover;border-radius:45% 45% 38% 38%;border:8px solid #fff8ec;box-shadow:0 22px 45px #52263e25;animation:none;transform:rotate(-6deg)}
+.hero-art::before{display:none}.hero-label{z-index:2}.hero-stamp{z-index:2}
+.story-art{overflow:hidden}.story-art img{width:100%;max-width:none;height:420px;object-fit:cover;transform:none}
+.item-art{padding:0;position:relative;overflow:hidden}.item-art img{width:100%;height:100%;min-height:100%;object-fit:cover}.item-art>span{position:absolute;bottom:15px;left:15px;background:#fff9edee;border-radius:30px;padding:4px 10px;color:#52263e}
+.cart-line>img{object-fit:cover}
+.photo-pending{width:100%;height:100%;min-height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;background:radial-gradient(ellipse at top,#39252e,#171116);color:#f0dce5;text-align:center;white-space:normal}
+.photo-pending>span{font-size:34px;color:#fa9865;line-height:1}.photo-pending strong{font-size:14px;line-height:1.4}.photo-pending small{font-size:10px;color:#c4abb9}.cart-line>.photo-pending{width:65px;height:65px;min-height:0;padding:5px;border-radius:12px}.cart-line>.photo-pending strong,.cart-line>.photo-pending small{display:none}
+@media(max-width:800px){.hero-art>img{height:400px}.category-tile img{height:150px}.product-image{height:215px}}
+@media(max-width:580px){.product-image{height:175px;padding:0}.category-tile img{height:110px;margin-bottom:10px}.category-tile{padding-bottom:13px}.hero-art>img{width:85%;height:310px;border-width:5px}.hero-art{height:345px}.story-art img{height:310px}.item-art{height:220px}.item-art img{height:220px}.image-caption{font-size:8px;padding:2px 6px;right:6px;bottom:7px}}

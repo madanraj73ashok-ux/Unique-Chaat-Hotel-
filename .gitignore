@@ -1,0 +1,28 @@
+# Local dependencies and temporary work
+node_modules/
+/work/
+/tmp/
+*.log
+
+# Credentials and local state
+.env
+.env.*
+!.env.example
+.private/
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+
+# Generated preview screenshots
+/*-preview.png
+/admin/*-preview.png
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
