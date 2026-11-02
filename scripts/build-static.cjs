@@ -7,8 +7,10 @@ if(output!==path.join(root,'dist')||!output.startsWith(root+path.sep))throw new 
 fs.rmSync(output,{recursive:true,force:true});
 fs.mkdirSync(output,{recursive:true});
 const files=['index.html','styles.css','motion.css','photos.css','dark.css','menu-data.js','catalog-store.js','core.js','photo-data.js','payment-options.js','app.js','ui-bundle.js','ui-bundle.js.LEGAL.txt','photo-credits.html'];
+files.push('auth.css','auth.js');
 for(const file of files)fs.copyFileSync(path.join(root,file),path.join(output,file));
 for(const dir of ['assets','licenses'])fs.cpSync(path.join(root,dir),path.join(output,dir),{recursive:true});
 fs.mkdirSync(path.join(output,'admin'),{recursive:true});
-for(const file of ['index.html','admin.css','admin.js'])fs.copyFileSync(path.join(root,'admin',file),path.join(output,'admin',file));
+// Admin HTML and executable dashboard code are served only after server authorization.
+fs.copyFileSync(path.join(root,'admin/admin.css'),path.join(output,'admin/admin.css'));
 console.log('Static website built in dist/');

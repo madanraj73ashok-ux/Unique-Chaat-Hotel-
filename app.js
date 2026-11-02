@@ -50,8 +50,13 @@
   }
   function checkoutPage(){return `<section class="container"><div class="page-hero"><span class="small-label">YOUR BASKET</span><h1 class="page-title">Your next happy bite.</h1></div><div class="panel order-summary"><h2>Your basket</h2>${cart.length?cart.map(l=>`<div class="receipt-line"><span>${l.qty} × ${escape(menu.find(m=>m.id===l.id).name)}<br><small>${lineOptions(l)}</small></span><strong>${money(unitPrice(l)*l.qty)}</strong></div>`).join('')+summaryRows():'<p>Your basket is empty.</p>'}<button class="button full" data-action="edit-cart">Edit your basket</button><a class="text-link" href="#/menu">Back to menu →</a></div></section>`}
   function confirmationPage(){return checkoutPage()}
-  function route(){
+  async function route(){
     closeDialogs();const [path,params]=(location.hash.slice(1)||'/').split('?');
+    if(['/menu','/checkout','/confirmation'].includes(path)){
+      const requested=location.hash;main.innerHTML=home();
+      if(!window.ChaatAuth||!await ChaatAuth.require(requested))return;
+      if(location.hash!==requested)return;
+    }
     if(path!=='/checkout'){checkoutData=null;checkoutStep=1}
     const titles={'/':'A little extra chatpata','/menu':'Explore the menu','/offers':'Offers','/about':'Our story','/contact':'Contact','/checkout':'Checkout','/confirmation':'Order status'};
     document.title=`${titles[path]||'Page not found'} | UNIQUE CHAAT`;
@@ -98,6 +103,7 @@
   document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()}}));
   document.addEventListener('unique:diet',e=>{diet=e.detail;renderMenu()});
   window.addEventListener('hashchange',route);
+  document.addEventListener('unique:authchange',route);
   window.addEventListener('storage',e=>{if(e.key?.startsWith('unique-chaat-')){try{cart=normalizeCart(JSON.parse(storage.get('unique-chaat-cart')||'[]'))}catch{cart=[]}mode=storage.get('unique-chaat-mode')==='pickup'?'pickup':'delivery';promo=storage.get('unique-chaat-promo')==='CHAAT15'?'CHAAT15':'';checkoutStep=1;updateHeader();if($('#cart-dialog').open)cartDialog();if(location.hash.startsWith('#/checkout'))redrawCheckout()}});
   $('#year').textContent=new Date().getFullYear();updateHeader();route();
 })();
