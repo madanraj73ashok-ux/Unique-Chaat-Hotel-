@@ -5,15 +5,6 @@
   "outputDirectory": "dist",
   "installCommand": "node -e \"process.exit(0)\"",
   "cleanUrls": false,
-  "functions": {
-    "api/admin.js": { "includeFiles": "{admin/index.html,admin/admin.js,auth/admin-login.html}" }
-  },
-  "rewrites": [
-    { "source": "/admin", "destination": "/api/admin" },
-    { "source": "/admin/", "destination": "/api/admin" },
-    { "source": "/admin/index.html", "destination": "/api/admin" },
-    { "source": "/admin/admin.js", "destination": "/api/admin?asset=script" }
-  ],
   "headers": [
     {
       "source": "/(.*)",
