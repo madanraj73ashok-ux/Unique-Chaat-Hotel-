@@ -78,3 +78,18 @@ body button[aria-pressed="true"] {
   font-variant-numeric: tabular-nums;
 }
 body .dcf-btn.is-solid .dcf-icon { stroke: #fff4e9; }
+
+/* Native menu dialogs use the same finish as conveyor dialogs. */
+#item-dialog #add-to-cart {
+  color: #fff4e9;
+  background: linear-gradient(165deg, rgb(65 65 68 / 86%), rgb(5 5 8 / 95%));
+  border: 1px solid rgb(255 255 255 / 66%);
+  border-radius: 999px;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 4px 12px rgb(0 0 0 / 18%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+#item-dialog #add-to-cart:hover {
+  background: linear-gradient(165deg, rgb(90 90 94 / 90%), rgb(20 20 24 / 96%));
+  border-color: #fff;
+}
