@@ -16,8 +16,10 @@
     "react-dom": "19.3.1"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "4.3.5",
     "esbuild": "0.28.2",
-    "playwright": "1.58.2"
+    "playwright": "1.58.2",
+    "tailwindcss": "4.3.5"
   },
   "engines": {
     "node": ">=18"

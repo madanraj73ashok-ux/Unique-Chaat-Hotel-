@@ -1,0 +1,32 @@
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@source "./vendor/food-conveyor.tsx";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+ --color-background:#080808;
+ --color-foreground:#fff1e4;
+ --color-muted-foreground:#c4b2b8;
+ --color-muted:#30252b;
+ --color-card:#191419;
+ --color-border:#624439;
+ --color-ring:#ff9a66;
+ --color-chart-1:#ff9a66;
+ --color-chart-2:#e6be56;
+ --color-chart-3:#89b78f;
+ --color-chart-4:#c88dba;
+ --color-chart-5:#ee7762;
+}
+.conveyor-home{min-height:540px;padding:40px 0 28px;font-family:system-ui,sans-serif}
+.conveyor-home h1{font-family:Impact,sans-serif;font-size:clamp(38px,5vw,76px);line-height:1.03;text-transform:uppercase;color:#ff9a66;margin:0}
+.conveyor-home p{margin:0}
+.conveyor-home ul{padding:0;list-style:none}
+.conveyor-home button,[data-dish-dialog] button{font-family:inherit}
+.conveyor-home img,[data-dish-figure] img{border-radius:50%;object-fit:cover}
+[data-dish-dialog]{box-sizing:border-box;font-family:system-ui,sans-serif}
+[data-dish-dialog] *{box-sizing:border-box}
+[data-dish-dialog] h3{margin:0}
+[data-dish-dialog] ul{padding:0;list-style:none}
+[data-doodle-footer] footer.dcf{padding:0;margin:0;max-width:none}
+.conveyor-loading{padding:100px 8vw;color:#ff9a66}
+@media(max-width:767px){.conveyor-home{min-height:430px;padding:20px 0}.conveyor-home h1{font-size:42px;max-width:18ch}}
